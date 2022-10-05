@@ -42,7 +42,7 @@ public class BoardController {
 			return new ResponseEntity<Void>(HttpStatus.BAD_REQUEST);
 	}
 	
-	@ApiOperation(value = "Write All Articles", response = BoardDto.class)
+	@ApiOperation(value = "Write All Articles.", response = BoardDto.class)
 	@PostMapping("/article")
 	public ResponseEntity<?> writeArticle(@RequestBody BoardDto boardDto) throws Exception {
 		System.out	.println("Write Articles");
