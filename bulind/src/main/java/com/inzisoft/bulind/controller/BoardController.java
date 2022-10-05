@@ -26,7 +26,7 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 	
-	@ApiOperation(value = "Get All Articles", response = BoardDto.class)
+	@ApiOperation(value = "Get All Articles.", response = BoardDto.class)
 	@GetMapping("/article")
 	public ResponseEntity<?> getArticle(Pageable pageable) throws Exception {
 		System.out.println(pageable.toString());
