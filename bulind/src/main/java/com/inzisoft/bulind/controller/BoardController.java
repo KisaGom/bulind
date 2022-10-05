@@ -57,7 +57,7 @@ public class BoardController {
 		return new ResponseEntity<BoardDto>(result, HttpStatus.OK);
 	}
 	
-	@ApiOperation(value = "Test API", response = HttpStatus.class)
+	@ApiOperation(value = "Test API.", response = HttpStatus.class)
 	@GetMapping("/test")
 	public ResponseEntity<?> getTest() {
 		System.out.println("get test");
