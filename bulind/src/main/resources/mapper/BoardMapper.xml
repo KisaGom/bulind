@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.inzisoft.bulind.model.BoardMapper">
+	<select id="getArticles" resultType="com.inzisoft.bulind.dto.BoardDto">
+	  select * from article 
+	</select>
+	
+	<insert id="writeArticle" parameterType="com.inzisoft.bulind.dto.BoardDto">
+		insert into article(title, content, writer, score) values(#{title}, #{content}, #{writer}, #{score})	
+	</insert>
+</mapper>
